@@ -20,7 +20,7 @@ You can select the appropriate branch as the main branch and discard the others.
         - Update your mod's Maven group and mod ID
             - If you don't know which Maven group to use, and you are planning to host the mod's source code on GitHub, use `io.github.<Your_Username_Here>`
         - Update your mod's dependencies
-            - Check [our meta](https://meta.ornithemc.net/v3/versions) for the latest available versions.
+            - Check [our develop page](https://ornithemc.net/develop) for the latest available versions.
     - Update `fabric.mod.json` in order to reflect your mod's metadata
         - If you are planning to include (jar-in-jar) a mod, don't forget to declare its dependency on it!
         - The icon provided here is a placeholder one. If you aren't able to replace it yet, you can delete it and remove the "icon" property
