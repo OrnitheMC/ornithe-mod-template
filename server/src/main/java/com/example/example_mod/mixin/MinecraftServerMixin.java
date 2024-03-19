@@ -13,7 +13,7 @@ import net.minecraft.server.MinecraftServer;
 public class MinecraftServerMixin {
 
 	@Inject(method = "main", remap = false, at = @At("HEAD"))
-	public static void exampleMod$onInit(CallbackInfo ci) {
+	private static void exampleMod$onInit(CallbackInfo ci) {
 		ExampleMod.LOGGER.info("This line is printed by an example mod mixin!");
 	}
 }
