@@ -13,7 +13,7 @@ import net.minecraft.client.gui.screen.TitleScreen;
 public class TitleScreenMixin {
 
 	@Inject(method = "init", at = @At("TAIL"))
-	public void exampleMod$onInit(CallbackInfo ci) {
+	private void exampleMod$onInit(CallbackInfo ci) {
 		ExampleMod.LOGGER.info("This line is printed by an example mod mixin!");
 	}
 }
