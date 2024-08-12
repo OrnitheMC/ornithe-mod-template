@@ -1,7 +1,7 @@
 plugins {
 	id 'maven-publish'
-	id 'org.quiltmc.loom' version '1.6-SNAPSHOT'
-	id 'ploceus' version '1.6-SNAPSHOT'
+	id 'org.quiltmc.loom' version '1.7-SNAPSHOT'
+	id 'ploceus' version '1.7-SNAPSHOT'
 }
 
 base {
@@ -21,7 +21,9 @@ repositories {
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings ploceus.featherMappings(project.feather_build)
-	nests ploceus.nests(project.nests_build) // remove this line if not using nests
+	exceptions ploceus.raven(project.raven_build) // remove this line if not using exceptions patches
+	signatures ploceus.sparrow(project.sparrow_build) // remove this line if not using generics patches
+	nests ploceus.nests(project.nests_build) // remove this line if not using inner class patches
 
 	modImplementation "org.quiltmc:quilt-loader:${project.loader_version}"
 
