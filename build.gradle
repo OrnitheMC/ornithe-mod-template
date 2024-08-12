@@ -10,6 +10,10 @@ base {
 version = "${project.version}+mc${project.minecraft_version}"
 group = project.maven_group
 
+ploceus {
+	setGeneration(2)
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -21,9 +25,16 @@ repositories {
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings ploceus.featherMappings(project.feather_build)
-	exceptions ploceus.raven(project.raven_build) // remove this line if not using exceptions patches
-	signatures ploceus.sparrow(project.sparrow_build) // remove this line if not using generics patches
-	nests ploceus.nests(project.nests_build) // remove this line if not using inner class patches
+
+	// remove these lines if not using exceptions patches
+	clientExceptions ploceus.raven(project.client_raven_build, 'client')
+	serverExceptions ploceus.raven(project.server_raven_build, 'server')
+	// remove these lines if not using generics patches
+	clientSignatures ploceus.sparrow(project.client_sparrow_build, 'client')
+	serverSignatures ploceus.sparrow(project.server_sparrow_build, 'server')
+	// remove these lines if not using inner class patches
+	clientNests ploceus.nests(project.client_nests_build, 'client')
+	serverNests ploceus.nests(project.server_nests_build, 'server')
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
