@@ -1,7 +1,7 @@
 plugins {
 	id 'maven-publish'
-	id 'fabric-loom' version '1.7-SNAPSHOT'
-	id 'ploceus' version '1.7-SNAPSHOT'
+	id 'fabric-loom' version '1.8-SNAPSHOT'
+	id 'ploceus' version '1.8-SNAPSHOT'
 }
 
 base {
@@ -38,7 +38,6 @@ dependencies {
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	ploceus.addCommonLibraries()
 	ploceus.dependOsl(project.osl_version)
 }
 
