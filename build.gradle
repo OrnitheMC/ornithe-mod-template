@@ -1,7 +1,7 @@
 plugins {
 	id 'maven-publish'
-	id 'fabric-loom' version '1.11-SNAPSHOT'
-	id 'ploceus' version '1.11-SNAPSHOT'
+	id 'net.fabricmc.fabric-loom-remap' version '1.14-SNAPSHOT'
+	id 'ploceus' version '1.14-SNAPSHOT'
 }
 
 base {
