@@ -1,7 +1,7 @@
 plugins {
 	id 'maven-publish'
-	id 'fabric-loom' version '1.10-SNAPSHOT'
-	id 'ploceus' version '1.10-SNAPSHOT'
+	id 'net.fabricmc.fabric-loom-remap' version '1.14-SNAPSHOT'
+	id 'ploceus' version '1.14-SNAPSHOT'
 }
 
 base {
@@ -11,7 +11,7 @@ version = "${project.version}+mc${project.minecraft_version}"
 group = project.maven_group
 
 ploceus {
-	setGeneration(2)
+	setIntermediaryGeneration(2)
 }
 
 repositories {
