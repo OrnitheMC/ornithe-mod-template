@@ -1,14 +1,14 @@
 plugins {
 	id 'java'
 	id 'maven-publish'
-	id 'net.fabricmc.fabric-loom-remap' version '1.14-SNAPSHOT' apply false
-	id 'ploceus' version '1.14-SNAPSHOT' apply false
+	id 'fabric-loom' version '1.15-SNAPSHOT' apply false
+	id 'ploceus' version '1.15-SNAPSHOT' apply false
 }
 
 def configure(project) {
 	project.apply plugin: 'java'
 	project.apply plugin: 'maven-publish'
-	project.apply plugin: 'net.fabricmc.fabric-loom-remap'
+	project.apply plugin: 'fabric-loom'
 	project.apply plugin: 'ploceus'
 
 	project.base {
