@@ -23,7 +23,7 @@
 		"example_mod.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
+		"fabricloader": ">=0.17.3",
 		"minecraft": "1.7.2",
 		"osl-entrypoints": ">=0.4.0"
 	}
