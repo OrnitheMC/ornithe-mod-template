@@ -12,6 +12,7 @@ pluginManagement {
 			name = 'Ornithe Snapshots'
 			url = 'https://maven.ornithemc.net/snapshots'
 		}
+		mavenLocal()
 		gradlePluginPortal()
 	}
 }
