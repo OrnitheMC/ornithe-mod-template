@@ -2,19 +2,11 @@
 
 The official Ornithe template mod. You can use it as a template for your own mods!
 
-## WIP Gen2
-
-This template is for "gen2", our work-in-progress generation of development tools. While gen2 brings improvements and new features, it is not yet stable. Keep in mind:
-- gen2 cannot (yet) be installed and used by end-users
-- gen2 intermediary may be re-generated at any time until it becomes stable, this will invalidate your gradle cache
-- gen2 may yet have bugs to be ironed out, please report any issues you find
-
 ## Usage
 
 In order to use this mod as a template:
 
 1. Create a new repository from this template with `Use this template`
-    - Tick the box "Include all branches"
 2. Clone the recently-created repo on your PC
 3. Make the necessary changes in order to make it yours:
     - Update `gradle.properties` in order to use your 
