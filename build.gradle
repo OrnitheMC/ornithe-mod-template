@@ -1,7 +1,7 @@
 plugins {
 	id 'maven-publish'
-	id 'fabric-loom' version '1.17-SNAPSHOT'
-	id 'ploceus' version '1.17-SNAPSHOT'
+	id 'fabric-loom' version '1.18-SNAPSHOT'
+	id 'ploceus' version '1.18-SNAPSHOT'
 }
 
 base {
@@ -9,10 +9,6 @@ base {
 }
 version = "${project.version}+mc${project.minecraft_version}"
 group = project.maven_group
-
-ploceus {
-	setIntermediaryGeneration(2)
-}
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
